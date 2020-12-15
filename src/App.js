@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
+import Weather from './components/Weather';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         const result = await answer.json();
   
         saveResult(result);
+        saveConsult(false);
       }
     }
     getAPI();
@@ -46,7 +48,9 @@ function App() {
               />
             </div>
             <div className="col m6 s12">
-              2
+              <Weather
+                result = {result}
+              />
             </div>
           </div>
         </div>
