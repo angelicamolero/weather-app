@@ -1,10 +1,7 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 
-const Form = () => {
-    const [search, saveSearch] = useState ({
-        city: '',
-        country: ''
-    });
+const Form = ({search, saveSearch, saveConsult}) => {
+
 
     const [error, saveError] = useState(false);
 
@@ -30,6 +27,7 @@ const Form = () => {
             return;
         }
         saveError(false);
+        saveConsult(true);
     }
 
     return(
