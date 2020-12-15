@@ -63,11 +63,10 @@ const Form = ({search, saveSearch, saveConsult}) => {
                 <label htmlFor="country">Country: </label>
             </div>
             <div className="input-field col s12">
-                <input 
+                <button 
                 type="submit"
-                value="Get Weather"
-                className="waves-effect waves-light btn-large btn-block yellow accent-4"
-                />
+                className="waves-effect waves-light btn-large btn-block yellow accent-4 col s12"
+                >Get Weather</button>
             </div>
         </form>
     );
