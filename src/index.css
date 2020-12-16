@@ -37,11 +37,23 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
 .container-form {
   padding: 3rem 0 1px 0;
   background-color: #607d8b;
+  background-image: url('./img/city-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
 }
-.mensaje {
+
+.container {
+  background-color: #263238;
+  padding: 2rem;
+  opacity: .8;
+}
+
+.message {
   text-align: center;
   font-size: 2rem;
 }
+
 .buscador i {
   width: 100%;
 }

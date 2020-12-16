@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import Error from './components/Error';
+import PropTypes from "prop-types";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       }
     }
     getAPI();
+    // eslint-disable-next-line
   }, [consult]);
 
   let component;
@@ -79,4 +81,7 @@ function App() {
   );
 }
 
+Weather.propTypes = {
+  result: PropTypes.object.isRequired
+}
 export default App;
